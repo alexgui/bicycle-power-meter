@@ -22,6 +22,7 @@ The final project consisted of the following hardware:
   - Modern Devices Wind Sensor Rev. C
 - Breadboard
 - Jumper Wires
+- USB Battery Pack
 - COTS Plastic Enclosure
 - Mounting Hardware
 
