@@ -16,10 +16,10 @@ The final project consisted of the following hardware:
 - Arduino Mega 2560
 - Sensors
   - Garmin GSC 10 Speed/Cadence Sensor
-  - BMP280
-  - LIS3DH
-  - L3GD20H
-  - Modern Devices Wind Sensor Rev. C
+  - Adafruit BMP280 (Temperature/Pressure Sensor)
+  - Adafruit LIS3DH (Acceleromter)
+  - Adafruit L3GD20H (Gyroscope)
+  - Modern Devices Wind Sensor Rev. C (Anemometer)
 - Breadboard
 - Jumper Wires
 - USB Battery Pack
