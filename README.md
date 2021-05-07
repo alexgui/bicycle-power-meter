@@ -1,7 +1,7 @@
 # Opposing Force Bicycle Power Meter
 This project was completed as the capstone project for my [EE542 - Advanced Embedded Systems Design](https://class.ece.uw.edu/542/peckol/) course at the University of Washington during the Summer 2016 quarter. Contributors included Herman Chen and Muktar Rashid. The purpose of the project was to rapidly develop an embedded device and demonstrate end-to-end management of the development process from concept to working prototype.
 
-As an avid cyclist, I turned to my main hobby for inspiration. I had always been interested in using power to facilitate more effective training, so I figured this project was an excellent opportunity to see how far I could get in building my own opposing force power meter (OFBPM) from the ground up. Instead of taking a direct force measurement with strain gauges as most bicycle power meters do, an opposing force bicycle power meter operates on the fundamental principle of Newton's Third Law: for every action, there is an equal and opposite reaction. The amount of force required to move a bicycle and it's rider is equal to the sum of all opposing forces, such as aerodynamic drag, gravity, and friction.
+As an avid cyclist, I turned to my main hobby for inspiration. I had always been interested in using power measurements to facilitate more effective training, so I figured this project was an excellent opportunity to see how far I could get in building my own opposing force power meter (OFBPM) from the ground up. Instead of taking a direct force measurement with strain gauges as most bicycle power meters do, an opposing force bicycle power meter operates on the fundamental principle of Newton's Third Law: for every action, there is an equal and opposite reaction. The amount of force required to move a bicycle and it's rider is equal to the sum of all opposing forces, such as aerodynamic drag, gravity, and friction.
 
 An example of a commercially available opposing force bicycle power meter is the [Velocomp PowerPod](https://velocomp.com/powerpod-v4/).
 
@@ -12,7 +12,7 @@ While Bluetooth Low Energy (BLE) is widely supported now, at the time of develop
 
 The final project consisted of the following hardware:
 - Garmin Edge 510 GPS Unit
-- Nordic Semiconductor nRF52
+- Nordic Semiconductor nRF52 Development Board
 - Arduino Mega 2560
 - Sensors
   - Garmin GSC 10 Speed/Cadence Sensor
@@ -26,7 +26,7 @@ The final project consisted of the following hardware:
 - COTS Plastic Enclosure
 - Mounting Hardware
 
-The Arduino collects all of the raw sensor measurements, processes the data, and then passes the data to the nRF52. The nRF52 directly collects the speed/cadence data. Once all of the data is colleted, the nRF52 performs the power calculation. Using the onboard ANT+ module, the nRF52 transmits the data to the head unit, where it can be displayed or combined with GPS data.
+The Arduino collects all of the raw sensor measurements, processes the data, and then passes the data to the nRF52. The nRF52 directly collects the speed/cadence data wirelessly via ANT+. Once all of the data is collected, the nRF52 performs the power calculation. Using the onboard ANT+ module, the nRF52 transmits the data to the head unit, where it can be displayed or combined with GPS data.
 
 <img width="321" alt="Screen Shot 2021-05-06 at 3 46 42 PM" src="https://user-images.githubusercontent.com/10524839/117374864-cd671b00-ae82-11eb-897d-32ad18f80065.png">
 
