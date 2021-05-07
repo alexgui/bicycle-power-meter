@@ -17,7 +17,7 @@ The final project consisted of the following hardware:
 - Sensors
   - Garmin GSC 10 Speed/Cadence Sensor
   - Adafruit BMP280 (Temperature/Pressure Sensor)
-  - Adafruit LIS3DH (Acceleromter)
+  - Adafruit LIS3DH (Accelerometer)
   - Adafruit L3GD20H (Gyroscope)
   - Modern Devices Wind Sensor Rev. C (Anemometer)
 - Breadboard
